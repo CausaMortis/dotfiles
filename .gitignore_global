@@ -1,0 +1,49 @@
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+
+# Redis, probably :)
+*.rdb
+
+# Nohup
+nohup.out
+
+# OS or Editor folders
+.DS_Store
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+
+*.iml
+*.ipr
+.rake_tasks
+
+# Folders to ignore
+.hg
+.svn
+.CVS
+.idea
+.vscode
+
+.powder
+erd.pdf
+
+# Xcode and App Code noise
+*.xccheckout
+xcuserdata
+
+# Mercurial
+.hg*
+
+# Some tool storing git-flow information in .flow files
+.flow

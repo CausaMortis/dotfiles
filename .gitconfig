@@ -1,0 +1,29 @@
+[user]
+  name = Jordy Schreuders
+  email = 3071062+99linesofcode@users.noreply.github.com
+[pull]
+  default = current
+[rebase]
+  autosquash = true
+[push]
+  default = current
+[alias]
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+  sla = log --oneline --decorate --graph --all
+  pufowile = push --force-with-lease
+[core]
+  editor = vim
+  excludesfile = /Users/j.schreuders/.gitignore_global
+  eol = lf
+  autocrlf = input
+[fetch]
+  prune = true
+[branch]
+  autosetuprebase = always
+[status]
+  submoduleSummary = true
+[diff]
+  submodule = log
