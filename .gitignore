@@ -15,12 +15,10 @@
 .ssh/*
 !.ssh/config
 
-# Vim and Vim plugged
 !.vim/
 .vim/*
 !vim/autoload/plugged.vim
 
-# .local/bin directory for non elevated binary access
 !.local/
 .local/*
 !.local/bin/
@@ -39,3 +37,4 @@ Documents/WindowsPowerShell/*
 # Miscellaneous
 !composer_install.sh
 !hybrid.itermcolors
+!.gtkrc-2.0
