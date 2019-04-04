@@ -19,6 +19,14 @@
 .vim/*
 !vim/autoload/plugged.vim
 
+# Visual Studio Code
+!Code/
+Code/*
+!Code/User/
+Code/User/*
+!Code/User/settings.json
+
+# Executables that shall appear in the user's $PATH
 !.local/
 .local/*
 !.local/bin/
