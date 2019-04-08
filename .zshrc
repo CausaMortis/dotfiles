@@ -35,8 +35,12 @@ agent_run_state=$(ssh-add -l >| /dev/null 2>&1; echo $?)
 if [ ! "$SSH_AUTH_SOCK" ] || [ $agent_run_state = 2 ]; then
   agent_start
   ssh-add ~/.ssh/github_99linesofcode_rsa
+  ssh-add ~/.ssh/gitlab_99linesofcode_rsa
+  ssh-add ~/.ssh/codepot_99linesofcode_rsa
 elif [ "$SSH_AUTH_SOCK" ] && [ $agent_run_state = 1 ]; then
   ssh-add ~/.ssh/github_99linesofcode_rsa
+  ssh-add ~/.ssh/gitlab_99linesofcode_rsa
+  ssh-add ~/.ssh/codepot_99linesofcode_rsa
 fi
 
 unset env
