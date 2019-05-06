@@ -1,5 +1,6 @@
 alias vrc="vim ~/.vimrc"
 alias zrc="vim ~/.zshrc"
+alias dev="cd /mnt/c/Development/"
 
 # -----------------------------------------------------------------------------
 # GIT
