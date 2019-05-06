@@ -19,31 +19,14 @@ unsetopt beep
 # SSH
 # -----------------------------------------------------------------------------
 
-env=~/.ssh/agent.env
-
-agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }
-
-agent_start () {
-  (umask 077; ssh-agent >| "$env")
-  . "$env" >| /dev/null ; }
-
-agent_load_env
-
-# agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running
-agent_run_state=$(ssh-add -l >| /dev/null 2>&1; echo $?)
-
-if [ ! "$SSH_AUTH_SOCK" ] || [ $agent_run_state = 2 ]; then
-  agent_start
-  ssh-add ~/.ssh/github_99linesofcode_rsa
-  ssh-add ~/.ssh/gitlab_99linesofcode_rsa
-  ssh-add ~/.ssh/codepot_99linesofcode_rsa
-elif [ "$SSH_AUTH_SOCK" ] && [ $agent_run_state = 1 ]; then
-  ssh-add ~/.ssh/github_99linesofcode_rsa
-  ssh-add ~/.ssh/gitlab_99linesofcode_rsa
-  ssh-add ~/.ssh/codepot_99linesofcode_rsa
+if [ ! -f ~/.ssh/config ] || ! cat ~/.ssh/config | grep AddKeysToAgent | grep yes > /dev/null; then
+  echo "Missing or disabled AddKeysToAgent option in ~/.ssh/config"
 fi
 
-unset env
+if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+  eval $(ssh-agent -s)
+  ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+fi
 
 # -----------------------------------------------------------------------------
 # Programming Environment Managers
@@ -81,8 +64,3 @@ export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
-
-eval $(ssh-agent -s)
-
-
-# sudo mount --bind /mnt/d /d               # WSL - bind custom mount points to fix Docker for Windows and WSL differences
