@@ -9,9 +9,9 @@ export PATH="$HOME/.local/bin:$PATH"
 
 export ZSH=$HOME/.oh-my-zsh
 
-plugins=(git pow ssh-agent)                   # standard oh-my-zsh plugins
-ZSH_THEME=juanghurtado                        # the lovely juang hurtado
-COMPLETION_WAITING_DOTS="true"                # display red dots awaiting completion of executed command
+plugins=(ssh-agent git colorize colored-man-pages)
+ZSH_THEME=juanghurtado 
+COMPLETION_WAITING_DOTS="true"
 
 unsetopt beep
 
