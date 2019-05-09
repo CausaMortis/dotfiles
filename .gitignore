@@ -25,6 +25,7 @@ Code/*
 !Code/User/
 Code/User/*
 !Code/User/settings.json
+!Code/User/keybindings.json
 
 # Executables that shall appear in the user's $PATH
 !.local/
@@ -40,6 +41,7 @@ Documents/*
 Documents/WindowsPowerShell/*
 !Documents/WindowsPowerShell/Microsoft.PowerShell_Profile.ps1
 
+# Windows Subsystem for Linux
 !wsl.conf
 
 # Miscellaneous
