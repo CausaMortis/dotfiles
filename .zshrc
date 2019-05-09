@@ -25,6 +25,13 @@ zstyle :omz:plugins:ssh-agent identities blade_github_rsa blade_gitlab_rsa blade
 # Programming Environment Managers
 # -----------------------------------------------------------------------------
 
+# nodenv
+export PATH="$HOME/.nodenv/bin:$PATH"
+
+if command -v nodenv 1>/dev/null 2>&1; then
+  eval "$(nodenv init -)"
+fi
+
 # pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
 
