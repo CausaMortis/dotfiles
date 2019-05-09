@@ -4,22 +4,26 @@ export LANG=en_US.UTF-8
 export PATH="$HOME/.local/bin:$PATH"
 
 # -----------------------------------------------------------------------------
-# Zshell and oh-my-zsh
+# Zsh and Oh-My-Zsh
 # -----------------------------------------------------------------------------
 
 export ZSH=$HOME/.oh-my-zsh
 
-plugins=(ssh-agent git colorize colored-man-pages)
+plugins=(ssh-agent git autojump colorize colored-man-pages)
 ZSH_THEME=juanghurtado 
 COMPLETION_WAITING_DOTS="true"
 
 unsetopt beep
 
 # -----------------------------------------------------------------------------
-# SSH - The SSH agent is managed by the ssh-agent plugin for oh-my-zsh
+# Oh-My-Zsh plugins
 # -----------------------------------------------------------------------------
 
 zstyle :omz:plugins:ssh-agent identities blade_github_rsa blade_gitlab_rsa blade_codepot_rsa
+
+if [[ -s /home/jordy/.autojump/etc/profile.d/autojump.sh ]]; then
+  source /home/jordy/.autojump/etc/profile.d/autojump.sh
+fi
 
 # -----------------------------------------------------------------------------
 # Programming Environment Managers
