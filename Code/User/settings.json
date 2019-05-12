@@ -16,6 +16,7 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "git.path": "C:\\tools\\wslgit\\wslgit.exe",
   "php.validate.executablePath": "C:\\tools\\php73\\php.exe",
   "prettier.singleQuote": true,
   "prettier.stylelintIntegration": true,
