@@ -10,16 +10,16 @@
   "files.eol": "\n",
   "files.exclude": {
     ".git": true,
-    "**/node_modules": true,
-    "**/vendor": true
+    "**/node_modules": true
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.path": "C:\\tools\\wslgit\\wslgit.exe",
-  "php.validate.executablePath": "C:\\tools\\php73\\php.exe",
+  "liveshare.featureSet": "insiders",
   "prettier.singleQuote": true,
   "prettier.stylelintIntegration": true,
+  "php.validate.executablePath": "C:\\tools\\php73\\php.exe",
   "stylelint.enable": true,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
@@ -27,8 +27,8 @@
   "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
   "vim.hlsearch": true,
   "vim.leader": "<space>",
+  "workbench.colorTheme": "Hybrid Next (Gray Background)",
   "workbench.startupEditor": "newUntitledFile",
   "window.zoomLevel": 0,
-  "zenMode.hideLineNumbers": false,
-  "workbench.colorTheme": "Hybrid Next (Gray Background)"
+  "zenMode.hideLineNumbers": false
 }
