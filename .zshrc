@@ -74,3 +74,5 @@ export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
+
+unalias gm
