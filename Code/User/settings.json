@@ -19,6 +19,7 @@
   "liveshare.featureSet": "insiders",
   "prettier.singleQuote": true,
   "prettier.stylelintIntegration": true,
+  "php.suggest.basic": false,
   "php.validate.executablePath": "C:\\tools\\php73\\php.exe",
   "stylelint.enable": true,
   "telemetry.enableCrashReporter": false,
@@ -28,5 +29,9 @@
   "workbench.colorTheme": "Hybrid Next (Gray Background)",
   "workbench.startupEditor": "newUntitledFile",
   "window.zoomLevel": 0,
-  "zenMode.hideLineNumbers": false
+  "vim.hlsearch": true,
+  "zenMode.hideLineNumbers": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
