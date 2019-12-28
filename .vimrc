@@ -24,6 +24,7 @@ Plug 'majutsushi/tagbar'
 Plug 'mileszs/ack.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-vdebug/vdebug'
 Plug 'w0ng/vim-hybrid'
 
 
