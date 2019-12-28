@@ -74,39 +74,36 @@ set expandtab
 set listchars=tab:»»,space:.,nbsp:.,trail:~,eol:¬
 set list
 
-" Disable arrow keys
+" Disable arrow keys in normal mode
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
-" -----------------------------------------------------------------------------
-" CTRL-P - Fuzzy finder and improvements using The Silver Searcher
-" -----------------------------------------------------------------------------
+" Open NERDTRee and Tagbar on launch
+augroup launch
+  autocmd VimEnter * NERDTree
+  autocmd VimEnter * TagbarToggle
+  autocmd VimEnter * wincmd p
+augroup END
 
-if executable('ag')
-    let g:ackprg = 'ag --vimgrep'
-
-    " use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-    let g:ctrlp_user_command = ['ag %s -l --hidden --nocolor -g ""', '.git', 'cd %s && git ls-files -co --exclude-standard']
-
-    " ag is fast enough that CtrlP doesn't need to cache
-    let g:ctrlp_use_caching = 0
-endif
+" Close NERDTree if last and only buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " -----------------------------------------------------------------------------
 " Leader mappings 
 " -----------------------------------------------------------------------------
 
-let mapleader = " "
+let mapleader = "."
 
 nnoremap <Leader>vi :source ~/.vimrc<CR>:PlugInstall<CR>
 
 " -----------------------------------------------------------------------------
-" Custom key mappings
+" Binds
 " -----------------------------------------------------------------------------
 
 map <C-n> :NERDTreeToggle<CR>
+map <C-o> :TagbarToggle<CR>
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
