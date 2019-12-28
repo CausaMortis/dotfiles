@@ -1,24 +1,32 @@
 set nocompatible
 
 " -----------------------------------------------------------------------------
-" VIM Plugins
+" Vim-Plugged
 " -----------------------------------------------------------------------------
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
 call plug#begin()
 
-Plug 'w0ng/vim-hybrid'
-Plug 'tpope/vim-markdown', {'for': 'markdown'}
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/vim-easy-align'
-Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree'
+Plug 'thaerkh/vim-indentguides'
+Plug 'tpope/vim-markdown', {'for': 'markdown'}
+Plug 'tpope/vim-surround'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'majutsushi/tagbar'
+Plug 'mileszs/ack.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'mileszs/ack.vim'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'leafgarland/typescript-vim'
-Plug 'thaerkh/vim-indentguides'
+Plug 'w0ng/vim-hybrid'
+
 
 call plug#end()
+
 
 " -----------------------------------------------------------------------------
 " General
