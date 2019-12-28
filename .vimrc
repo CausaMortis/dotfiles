@@ -12,6 +12,7 @@ endif
 call plug#begin()
 
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'scrooloose/nerdtree'
 Plug 'thaerkh/vim-indentguides'
