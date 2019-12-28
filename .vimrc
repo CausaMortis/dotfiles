@@ -38,12 +38,15 @@ colorscheme hybrid
 
 set autowrite                   " automatically write before running commands
 set backspace=2                 " backspace deletes like most programs in insert mode
+set clipboard=unnamed           " always enable clipboard
+set cmdheight=2                 " better display for messages
 set encoding=utf-8              " file encoding when displayed
 set fileencoding=utf-8          " file encoding when writing
 set ff=unix                     " set file formats to unix over dos
-set laststatus=2                " always display the status line
 set ignorecase                  " case insensitive search
 set incsearch                   " jump to closest instance when searching
+set hidden                      " hide unsaved files instead of closing them
+set laststatus=2                " always display the status line
 set nobackup                    " do not keep backups of files
 set noerrorbells                " disable error bells
 set noswapfile                  " disable swap files 
@@ -51,6 +54,7 @@ set nojoinspaces                " use one space, not two, after punctuation
 set nowritebackup               " do not make a backup when writing files
 set number                      " display the absolute line number
 set numberwidth=5               " 
+set mouse=a                     " allow scrolling with trackpad
 set ruler                       " always show where the cursor is
 set rnu                         " use relative line number
 set showcmd                     " display incomplete commands
@@ -58,6 +62,7 @@ set splitbelow                  " split to bottom
 set splitright                  " vsplit to the right
 set visualbell                  " visualbell instead of beeping
 set t_vb=                       " visualbell character to display, nothing
+set updatetime=300              " improve experience with diagnostic messages #neoclide/coc.nvim
 
 " Softtabs, 2 spaces
 set tabstop=2
