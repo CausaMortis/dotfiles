@@ -105,8 +105,29 @@ nnoremap <Leader>vi :source ~/.vimrc<CR>:PlugInstall<CR>
 map <C-n> :NERDTreeToggle<CR>
 map <C-o> :TagbarToggle<CR>
 
-" Start interactive EasyAlign in visual mode (e.g. vipga)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-xmap ga <Plug>(EasyAlign)
-nmap ga <Plug>(EasyAlign)
+" -----------------------------------------------------------------------------
+" CTRL-P and Ripgrep
+" -----------------------------------------------------------------------------
 
+if executable('ag')
+  set grepprg=rg\ --color=never
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_use_caching = 0
+  let g:ctrlp_custom_ignore = '\v[\/](node_modules|vendor)|(\.(swp|ico|git))$'
+endif
+
+
+" -----------------------------------------------------------------------------
+" Conquer of Completion - Intellisense
+" -----------------------------------------------------------------------------
+
+inoremap <silent><expr> <TAB>
+  \ pumvisible() ? "\<C-n>" : 
+  \ <SID>check_backspace() ? "\<TAB>" :
+  \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_backspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1] =~# '\s'
+endfunction
