@@ -46,9 +46,6 @@ fi
 # yarn
 export PATH="$(yarn global bin):$PATH"
 
-# composer
-export PATH="~/.composer/vendor/bin:$PATH"
-
 # -----------------------------------------------------------------------------
 # Programming Environments and DBMS
 # -----------------------------------------------------------------------------
@@ -59,6 +56,9 @@ PYTHONDONTWRITEBYTECODE="true"
 
 # pgsql
 export PGUSER=postgres
+
+# composer
+export PATH="~/.composer/vendor/bin:$PATH"
 
 
 # -----------------------------------------------------------------------------
