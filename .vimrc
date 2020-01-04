@@ -44,6 +44,8 @@ set autowrite                   " automatically write before running commands
 set backspace=2                 " backspace deletes like most programs in insert mode
 set clipboard=unnamed           " always enable clipboard
 set cmdheight=2                 " better display for messages
+set colorcolumn=80,110          " display ruler at specific column
+highlight Colorcolumn guibg=#1d1f21
 set encoding=utf-8              " file encoding when displayed
 set fileencoding=utf-8          " file encoding when writing
 set ff=unix                     " set file formats to unix over dos
