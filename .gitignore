@@ -15,24 +15,8 @@
 .ssh/*
 !.ssh/config
 
-!.vim/
-.vim/*
-!vim/autoload/plugged.vim
-
-# Visual Studio Code
-!Code/
-Code/*
-!Code/User/
-Code/User/*
-!Code/User/settings.json
-!Code/User/keybindings.json
-
-# Executables that shall appear in the user's $PATH
-!.local/
-.local/*
-!.local/bin/
-.local/bin/*
-!.local/bin/.gitignore
+# Windows Subsystem for Linux
+!wsl.conf
 
 # Windows PowerShell configuration
 !Documents/
@@ -40,9 +24,6 @@ Documents/*
 !Documents/WindowsPowerShell/
 Documents/WindowsPowerShell/*
 !Documents/WindowsPowerShell/Microsoft.PowerShell_Profile.ps1
-
-# Windows Subsystem for Linux
-!wsl.conf
 
 # Miscellaneous
 !composer_install.sh
