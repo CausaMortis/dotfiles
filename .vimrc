@@ -39,27 +39,30 @@ call plug#end()
 syntax on                       " enable basic syntax highlighting
 set background=dark
 colorscheme hybrid
+filetype plugin indent on       " filetype detection
 
 set autowrite                   " automatically write before running commands
-set backspace=2                 " backspace deletes like most programs in insert mode
+set backspace=indent,eol,start  " backspace deletes like most programs in insert mode
 set clipboard=unnamed           " always enable clipboard
 set cmdheight=2                 " better display for messages
 set colorcolumn=80,110          " display ruler at specific column
-highlight Colorcolumn guibg=#1d1f21
+set cursorline                  " highlight screen column cursor
 set encoding=utf-8              " file encoding when displayed
 set fileencoding=utf-8          " file encoding when writing
 set ff=unix                     " set file formats to unix over dos
 set ignorecase                  " case insensitive search
+set smartcase                   " override ignore case when pattern has upper case characters
 set incsearch                   " jump to closest instance when searching
 set hidden                      " hide unsaved files instead of closing them
 set laststatus=2                " always display the status line
+set matchpairs=(:),{:},[:],<:>  " list of pairs that match for the % command
 set nobackup                    " do not keep backups of files
 set noerrorbells                " disable error bells
 set noswapfile                  " disable swap files 
 set nojoinspaces                " use one space, not two, after punctuation
 set nowritebackup               " do not make a backup when writing files
 set number                      " display the absolute line number
-set numberwidth=5               " 
+set numberwidth=5               " minimum number of columns for line number
 set mouse=a                     " allow scrolling with trackpad
 set ruler                       " always show where the cursor is
 set rnu                         " use relative line number
@@ -69,12 +72,17 @@ set splitright                  " vsplit to the right
 set visualbell                  " visualbell instead of beeping
 set t_vb=                       " visualbell character to display, nothing
 set updatetime=300              " improve experience with diagnostic messages #neoclide/coc.nvim
+set wildmenu                    " commandline command completion
+set wildmode=longest:list,full  " complete to longest string, show match list, second tab to complete
 
-" Softtabs, 2 spaces
-set tabstop=2
-set shiftwidth=2
-set shiftround
-set expandtab
+" Tabs and indenting
+set tabstop=2                   " number of spaces a <TAB> in text stands for
+set shiftwidth=2                " number of spaces used for each step of indent
+set shiftround                  " round to shiftwidth for << and >>
+set expandtab                   " expand <TAB> to spaces in Insert mode
+set smarttab                    " a <TAB> in an indent inserts 'shiftwidth' spaces
+set autoindent                  " automatically set the indent of a new line
+set smartindent                 " clever autoindenting
 
 " Display extra whitespace
 set listchars=tab:»»,space:.,nbsp:.,trail:~,eol:¬
@@ -86,9 +94,9 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
-" Open NERDTRee and Tagbar on launch
+" Open NERDTree and Tagbar on launch
 augroup launch
-  autocmd VimEnter * NERDTree
+  autocmd VimEnter * NERDTreeFind
   autocmd VimEnter * TagbarToggle
   autocmd VimEnter * wincmd p
 augroup END
@@ -109,6 +117,7 @@ nnoremap <Leader>vi :source ~/.vimrc<CR>:PlugInstall<CR>
 " -----------------------------------------------------------------------------
 
 map <C-n> :NERDTreeToggle<CR>
+map <C-N> :NERDTreeFind<CR>
 map <C-o> :TagbarToggle<CR>
 
 " -----------------------------------------------------------------------------
