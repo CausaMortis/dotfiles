@@ -74,6 +74,7 @@ set t_vb=                       " visualbell character to display, nothing
 set updatetime=300              " improve experience with diagnostic messages #neoclide/coc.nvim
 set wildmenu                    " commandline command completion
 set wildmode=longest:list,full  " complete to longest string, show match list, second tab to complete
+set wildignore+=*/.git/*,*.swp  " ignore git directory and swap files
 
 " Tabs and indenting
 set tabstop=2                   " number of spaces a <TAB> in text stands for
@@ -96,7 +97,7 @@ nnoremap <Down> :echoe "Use j"<CR>
 
 " Open NERDTree and Tagbar on launch
 augroup launch
-  autocmd VimEnter * NERDTreeFind
+  autocmd VimEnter * NERDTree
   autocmd VimEnter * TagbarToggle
   autocmd VimEnter * wincmd p
 augroup END
@@ -126,10 +127,9 @@ map <C-o> :TagbarToggle<CR>
 
 if executable('ag')
   set grepprg=rg\ --color=never
-  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_user_command = 'rg %s --color never --files --hidden --smart-case --ignore-file .gitignore'
   let g:ctrlp_use_caching = 1
-  let g:cntrp_clear_cache_on_exit = 0
-  let g:ctrlp_custom_ignore = '\v[\/](node_modules|vendor)|(\.(swp|ico|git))$'
+  let g:ctrlp_clear_cache_on_exit = 0
 endif
 
 
