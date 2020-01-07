@@ -91,19 +91,26 @@ set wildignore+=*/.git/*,*.swp                                                 "
 " Leader mappings 
 " -----------------------------------------------------------------------------
 
-let mapleader = "."
+let mapleader = " "
+
+nnoremap <Leader>pi :source ~/.vimrc<CR>:PlugInstall<CR>
+nnoremap <Leader>pc :source ~/.vimrc<CR>:PlugClean<CR>
 
 
-map <C-o> :TagbarToggle<CR>
-
-nnoremap <Leader>vi :source ~/.vimrc<CR>:PlugInstall<CR>
 
 " -----------------------------------------------------------------------------
-" NERDTree
+" NERDTree and Taglist
 " -----------------------------------------------------------------------------
+
+let g:NERDTreeMinimalUI=1
+let g:NERDTreeShowHidden=1
+let g:NERDTreeWinSize=50
+
+let g:tagbar_width=40
 
 map <C-n> :NERDTreeToggle<CR>
 map <C-N> :NERDTreeFind<CR>
+map <C-o> :TagbarToggle<CR>
 
 " Open NERDTree and Tagbar on launch
 augroup launch
@@ -121,10 +128,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 if executable('rg')
   set grepprg=rg
-  let g:ctrlp_user_command = 'rg --files --color=never --hidden %s -g !.git'
-  let g:ctrlp_use_caching = 1
-  let g:ctrlp_clear_cache_on_exit = 0
-  let g:ctrlp_cache_dir = '/tmp'
+  let g:ctrlp_user_command='rg --files --color=never --hidden %s -g !.git'
+  let g:ctrlp_use_caching=1
+  let g:ctrlp_clear_cache_on_exit=0
+  let g:ctrlp_cache_dir='/tmp'
 endif
 
 
