@@ -86,6 +86,25 @@ set wildmenu                                                                   "
 set wildmode=longest:list,full                                                 " complete to longest string, show match list, second tab to complete
 set wildignore+=*/.git/*,*.swp                                                 " ignore git directory and swap files
 
+
+" -----------------------------------------------------------------------------
+" Leader mappings 
+" -----------------------------------------------------------------------------
+
+let mapleader = "."
+
+
+map <C-o> :TagbarToggle<CR>
+
+nnoremap <Leader>vi :source ~/.vimrc<CR>:PlugInstall<CR>
+
+" -----------------------------------------------------------------------------
+" NERDTree
+" -----------------------------------------------------------------------------
+
+map <C-n> :NERDTreeToggle<CR>
+map <C-N> :NERDTreeFind<CR>
+
 " Open NERDTree and Tagbar on launch
 augroup launch
   autocmd VimEnter * NERDTree
@@ -95,22 +114,6 @@ augroup END
 
 " Close NERDTree if last and only buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-" -----------------------------------------------------------------------------
-" Leader mappings 
-" -----------------------------------------------------------------------------
-
-let mapleader = "."
-
-nnoremap <Leader>vi :source ~/.vimrc<CR>:PlugInstall<CR>
-
-" -----------------------------------------------------------------------------
-" Binds
-" -----------------------------------------------------------------------------
-
-map <C-n> :NERDTreeToggle<CR>
-map <C-N> :NERDTreeFind<CR>
-map <C-o> :TagbarToggle<CR>
 
 " -----------------------------------------------------------------------------
 " CTRL-P and Ripgrep
