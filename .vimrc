@@ -119,11 +119,12 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " CTRL-P and Ripgrep
 " -----------------------------------------------------------------------------
 
-if executable('ag')
-  set grepprg=rg\ --color=never
-  let g:ctrlp_user_command = 'rg %s --color never --files --hidden --smart-case --ignore-file .gitignore'
+if executable('rg')
+  set grepprg=rg
+  let g:ctrlp_user_command = 'rg --files --color=never --hidden %s -g !.git'
   let g:ctrlp_use_caching = 1
   let g:ctrlp_clear_cache_on_exit = 0
+  let g:ctrlp_cache_dir = '/tmp'
 endif
 
 
