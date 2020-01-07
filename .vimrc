@@ -14,6 +14,7 @@ call plug#begin()
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/vim-easy-align'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'thaerkh/vim-indentguides'
@@ -28,7 +29,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-vdebug/vdebug'
 Plug 'w0ng/vim-hybrid'
-
 
 call plug#end()
 
