@@ -95,8 +95,8 @@ let mapleader = " "
 
 nnoremap <Leader>pi :source ~/.vimrc<CR>:PlugInstall<CR>
 nnoremap <Leader>pc :source ~/.vimrc<CR>:PlugClean<CR>
-
-
+nnoremap <Leader>n :nohlsearch<CR>
+nnoremap <Leader>s :w<CR>
 
 " -----------------------------------------------------------------------------
 " NERDTree and Taglist
