@@ -1,0 +1,26 @@
+{
+  "editor.cursorBlinking": "smooth",
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveTimeout": 5000,
+  "editor.lineNumbers": "on",
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [80, 120],
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "files.exclude": {
+    ".git": true,
+    "**/node_modules": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.path": "C:\\tools\\Git\\bin\\git.exe",
+  "prettier.singleQuote": true,
+  "php.suggest.basic": false,
+  "php.validate.executablePath": "C:\\tools\\php74\\php.exe",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "workbench.colorTheme": "Hybrid Next (Gray Background)",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe"
+}

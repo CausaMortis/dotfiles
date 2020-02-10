@@ -15,17 +15,39 @@
 .ssh/*
 !.ssh/config
 
-# Windows Subsystem for Linux
+# -----------------------------------------------------------------------------
+# Windows
+# -----------------------------------------------------------------------------
+
+# WSL
 !wsl.conf
 
-# Windows PowerShell configuration
+# PowerShell - user profile
 !Documents/
 Documents/*
 !Documents/WindowsPowerShell/
 Documents/WindowsPowerShell/*
 !Documents/WindowsPowerShell/Microsoft.PowerShell_Profile.ps1
 
-# Miscellaneous
-!composer_install.sh
+# VSCode - settings and keybindings
+!AppData/
+AppData/*
+!AppData/Roaming/
+AppData/Roaming/*
+!AppData/Roaming/Code/
+AppData/Roaming/Code/*
+!AppData/Roaming/Code/User/
+AppData/Roaming/Code/User/*
+!AppData/Roaming/Code/User/settings.json
+!AppData/Roaming/Code/User/keybindings.json
+
+# -----------------------------------------------------------------------------
+# Mac OS
+# -----------------------------------------------------------------------------
 !hybrid.itermcolors
+
+# -----------------------------------------------------------------------------
+# Miscellaneous
+# -----------------------------------------------------------------------------
+!composer_install.sh
 !.gtkrc-2.0
