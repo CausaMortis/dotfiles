@@ -9,6 +9,7 @@
     120
   ],
   "editor.tabSize": 2,
+  "editor.quickSuggestions": { "comments": true },
   "files.eol": "\n",
   "files.exclude": {
     ".git": true,
