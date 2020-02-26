@@ -6,7 +6,7 @@ alias zrc="vim ~/.zshrc"
 # -----------------------------------------------------------------------------
 
 alias gl="git log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) %C(cyan)<%an>%Creset' --abbrev-commit"
-alias prune_branches='git checkout develop && git fetch && git remote prune origin && git branch --merged develop | grep -v "develop$" | xargs git branch -d'
+alias prune_branches='git checkout master && git fetch && git remote prune origin && git branch --merged master | grep -v "master$" | xargs git branch -d'
 alias gtrack='git branch -u origin/$(current_branch)'
 
 # -----------------------------------------------------------------------------
