@@ -33,6 +33,7 @@
   "php-cs-fixer.lastDownload": 1582575392800,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
   "workbench.colorTheme": "Hybrid Next (Gray Background)",
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe"
+  "window.zoomLevel": 0
 }
