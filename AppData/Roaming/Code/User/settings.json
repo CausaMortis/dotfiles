@@ -19,6 +19,12 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.path": "C:\\tools\\Git\\bin\\git.exe",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "junstyle.php-cs-fixer",
+  },
   "prettier.singleQuote": true,
   "php.suggest.basic": false,
   "php.validate.executablePath": "C:\\tools\\php74\\php.exe",
