@@ -1,11 +1,13 @@
 {
   "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": false,
-  "editor.formatOnSave": true,
-  "editor.formatOnSaveTimeout": 5000,
+  "editor.formatOnSave": false,
   "editor.lineNumbers": "on",
   "editor.renderWhitespace": "all",
-  "editor.rulers": [80, 120],
+  "editor.rulers": [
+    80,
+    120
+  ],
   "editor.tabSize": 2,
   "files.eol": "\n",
   "files.exclude": {
