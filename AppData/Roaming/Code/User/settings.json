@@ -2,39 +2,57 @@
   "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": false,
   "editor.formatOnSave": false,
+  "editor.formatOnPaste": true,
   "editor.lineNumbers": "on",
+  "editor.lineHeight": 30,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "explorer.openEditors.visible": 0,
+  "editor.quickSuggestions": { "comments": true },
+  "editor.quickSuggestionsDelay": 0,
   "editor.renderWhitespace": "all",
   "editor.rulers": [
     80,
     120
   ],
   "editor.tabSize": 2,
-  "editor.quickSuggestions": { "comments": true },
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "extensions.ignoreRecommendations": false,
   "files.eol": "\n",
   "files.exclude": {
     ".git": true,
-    "**/node_modules": true
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.path": "C:\\tools\\Git\\bin\\git.exe",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[php]": {
-    "editor.defaultFormatter": "junstyle.php-cs-fixer",
-  },
   "prettier.singleQuote": true,
   "php.suggest.basic": false,
   "php.validate.executablePath": "C:\\tools\\php74\\php.exe",
   "php-cs-fixer.rules": "@PSR2",
   "php-cs-fixer.config": "~/.vscode/.php_cs.laravel",
   "php-cs-fixer.executablePath": "${extensionPath}\\php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1582575392800,
+  "php-cs-fixer.lastDownload": 1583510590836,
+  "search.useIgnoreFiles": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    // Hide everything in /vendor, except "laravel" folder.
+    "**/vendor/[abcdefghijkmnopqrstuvwxyz]*": true,
+    "**/vendor/l[bcdefghijklmnopqrstuvwxyz]*": true,
+    "storage/framework/views": true
+  },
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
   "workbench.colorTheme": "Hybrid Next (Gray Background)",
-  "window.zoomLevel": 0
+  "workbench.sideBar.location": "right",
+  "window.zoomLevel": 0,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "junstyle.php-cs-fixer",
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
 }
