@@ -112,13 +112,6 @@ map <C-n> :NERDTreeToggle<CR>
 map <C-N> :NERDTreeFind<CR>
 map <C-o> :TagbarToggle<CR>
 
-" Open NERDTree and Tagbar on launch
-augroup launch
-  autocmd VimEnter * NERDTree
-  autocmd VimEnter * TagbarToggle
-  autocmd VimEnter * wincmd p
-augroup END
-
 " Close NERDTree if last and only buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
