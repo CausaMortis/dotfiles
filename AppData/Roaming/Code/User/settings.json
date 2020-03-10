@@ -45,6 +45,7 @@
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
   "workbench.colorTheme": "Hybrid Next (Gray Background)",
   "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
   "window.zoomLevel": 0,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
