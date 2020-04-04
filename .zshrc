@@ -67,7 +67,6 @@ export PATH="~/.composer/vendor/bin:$PATH"
 export DOCKER_HOST=tcp://0.0.0.0:2375
 export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
 
-
 # -----------------------------------------------------------------------------
 # Post Setup
 # -----------------------------------------------------------------------------

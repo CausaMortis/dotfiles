@@ -32,3 +32,5 @@ alias ngrok="ngrok.exe"
 alias dps="docker ps"
 alias dc="docker-compose"
 alias dev="docker-compose up -d nginx mysql workspace phpmyadmin"
+alias work="docker-compose exec workspace bash"
+
