@@ -116,6 +116,12 @@ map <C-o> :TagbarToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " -----------------------------------------------------------------------------
+" Gutentags
+" -----------------------------------------------------------------------------
+
+let g:gutentags_exclude_filetypes = ['gitcommit', 'gitconfig', 'gitrebase', 'gitsendemail', 'git']
+
+" -----------------------------------------------------------------------------
 " CTRL-P and Ripgrep
 " -----------------------------------------------------------------------------
 
