@@ -18,6 +18,7 @@
   "editor.tabSize": 2,
   "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
   "extensions.ignoreRecommendations": false,
+  "files.autoSave": "afterDelay",
   "files.eol": "\n",
   "files.exclude": {
     ".git": true,
@@ -31,17 +32,13 @@
   "php.suggest.basic": false,
   "php.validate.executablePath": "C:\\tools\\php74\\php.exe",
   "php-cs-fixer.rules": "@PSR2",
-  "php-cs-fixer.config": "~/.vscode/.php_cs.laravel",
+  "php-cs-fixer.config": "C:\\Users\\jordy\\.vscode\\.php_cs.laravel",
   "php-cs-fixer.executablePath": "${extensionPath}\\php-cs-fixer.phar",
-  "php-cs-fixer.lastDownload": 1585337709505,
+  "php-cs-fixer.lastDownload": 1586859000277,
   "search.useIgnoreFiles": false,
   "search.exclude": {
     "**/.git": true,
     "**/node_modules": true,
-    // Hide everything in /vendor, except "laravel" folder.
-    "**/vendor/[abcdefghijkmnopqrstuvwxyz]*": true,
-    "**/vendor/l[bcdefghijklmnopqrstuvwxyz]*": true,
-    // Hide cached views.
     "storage/framework/views": true
   },
   "telemetry.enableCrashReporter": false,
