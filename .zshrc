@@ -23,10 +23,11 @@ zstyle :omz:plugins:ssh-agent identities id_rsa blade_github_rsa blade_gitlab_rs
 
 if [[ -s /home/jordy/.autojump/etc/profile.d/autojump.sh ]]; then
   source /home/jordy/.autojump/etc/profile.d/autojump.sh
+  autoload -U compinit && compinit -u
 fi
 
 # -----------------------------------------------------------------------------
-# Programming Environment Managers
+# Programming Environments
 # -----------------------------------------------------------------------------
 
 # nodenv
@@ -46,26 +47,8 @@ fi
 # yarn
 export PATH="$(yarn global bin):$PATH"
 
-# -----------------------------------------------------------------------------
-# Programming Environments and DBMS
-# -----------------------------------------------------------------------------
-
-# python
-APP_ENV=dev
-PYTHONDONTWRITEBYTECODE="true"
-
-# pgsql
-export PGUSER=postgres
-
 # composer
 export PATH="~/.composer/vendor/bin:$PATH"
-
-
-# -----------------------------------------------------------------------------
-# WSL - Microsoft subsystem for Linux
-# -----------------------------------------------------------------------------
-export DOCKER_HOST=tcp://0.0.0.0:2375
-export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
 
 # -----------------------------------------------------------------------------
 # Post Setup
