@@ -20,7 +20,7 @@
     "profiles": {
         "defaults": {
             // Put settings here that you want to apply to all profiles.
-            "colorScheme": "OneHalfDark"
+            "colorScheme": "Custom"
         },
         "list": [
             {
@@ -54,27 +54,27 @@
     // Add custom color schemes to this array.
     // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
     "schemes": [
-        {
-            "name": "OneHalfDark",
-            "black": "#282c34",
-            "red": "#e06c75",
-            "green": "#98c379",
-            "yellow": "#e5c07b",
-            "blue": "#61afef",
-            "purple": "#c678dd",
-            "cyan": "#56b6c2",
-            "white": "#dcdfe4",
-            "brightBlack": "#282c34",
-            "brightRed": "#e06c75",
-            "brightGreen": "#98c379",
-            "brightYellow": "#e5c07b",
-            "brightBlue": "#61afef",
-            "brightPurple": "#c678dd",
-            "brightCyan": "#56b6c2",
-            "brightWhite": "#dcdfe4",
-            "background": "#282c34",
-            "foreground": "#dcdfe4"
-        }
+          {
+            "name": "Custom",
+            "black": "#000000",
+            "red": "#f2777a",
+            "green": "#99cc99",
+            "yellow": "#ffcc66",
+            "blue": "#6699cc",
+            "purple": "#cc99cc",
+            "cyan": "#66cccc",
+            "white": "#e5e5e5",
+            "brightBlack": "#666666",
+            "brightRed": "#f2777a",
+            "brightGreen": "#99cc99",
+            "brightYellow": "#ffcc66",
+            "brightBlue": "#6699cc",
+            "brightPurple": "#cc99cc",
+            "brightCyan": "#66cccc",
+            "brightWhite": "#e5e5e5",
+            "background": "#1f1f1f",
+            "foreground": "#cccccc"
+          }
     ],
     // Add custom keybindings to this array.
     // To unbind a key combination from your defaults.json, set the command to "unbound".
