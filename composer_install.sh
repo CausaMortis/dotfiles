@@ -14,4 +14,6 @@ fi
 php composer-setup.php --quiet
 RESULT=$?
 rm composer-setup.php
+mkdir -p ~/.local/bin
+mv composer.phar ~/.local/bin/composer
 exit $RESULT
