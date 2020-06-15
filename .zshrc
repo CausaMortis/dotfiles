@@ -19,7 +19,7 @@ unsetopt beep
 # Oh-My-Zsh plugins
 # -----------------------------------------------------------------------------
 
-zstyle :omz:plugins:ssh-agent identities id_rsa blade_github_rsa blade_gitlab_rsa 
+zstyle :omz:plugins:ssh-agent identities id_rsa blade_github_rsa  
 
 if [[ -s /home/jordy/.autojump/etc/profile.d/autojump.sh ]]; then
   source /home/jordy/.autojump/etc/profile.d/autojump.sh
