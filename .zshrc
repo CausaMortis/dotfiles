@@ -37,20 +37,6 @@ if command -v nodenv 1>/dev/null 2>&1; then
   eval "$(nodenv init -)"
 fi
 
-# pyenv
-export PATH="$HOME/.pyenv/bin:$PATH"
-
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-
-# phpenv
-export PATH="$HOME/.phpenv/bin:$PATH"
-
-if command -v phpenv 1>/dev/null 2>&1; then
-  eval "$(phpenv init -)"
-fi
-
 # yarn
 export PATH="$(yarn global bin):$PATH"
 
