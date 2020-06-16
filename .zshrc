@@ -9,7 +9,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 export ZSH=$HOME/.oh-my-zsh
 
-plugins=(ssh-agent git autojump colorize colored-man-pages)
+plugins=(ssh-agent git autojump colorize colored-man-pages composer docker-compose history)
 ZSH_THEME=juanghurtado 
 COMPLETION_WAITING_DOTS="true"
 
