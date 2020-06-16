@@ -20,7 +20,8 @@
     "profiles": {
         "defaults": {
             // Put settings here that you want to apply to all profiles.
-            "colorScheme": "Custom"
+            "colorScheme": "Custom",
+            "fontSize": 10
         },
         "list": [
             {
