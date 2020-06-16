@@ -15,22 +15,3 @@ alias gtrack='git branch -u origin/$(current_branch)'
 
 alias ls="ls -GFh --color=auto"
 alias ctags="ctags -R --exclude=@.ctagsignore ."
-
-# -----------------------------------------------------------------------------
-# WSL
-# -----------------------------------------------------------------------------
-alias vagrant="vagrant.exe"
-alias docker="docker.exe"
-alias docker-compose="docker-compose.exe"
-alias docker-machine="docker-machine.exe"
-alias ngrok="ngrok.exe"
-
-# -----------------------------------------------------------------------------
-# Docker
-# -----------------------------------------------------------------------------
-
-alias dps="docker ps"
-alias dc="docker-compose"
-alias dev="docker-compose up -d nginx mysql workspace phpmyadmin"
-alias work="docker-compose exec workspace bash"
-
