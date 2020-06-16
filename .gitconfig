@@ -16,7 +16,7 @@
   pufowile = push --force-with-lease
 [core]
   editor = vim
-  excludesfile = C:\\Users\\jordy\\.gitignore_global
+  excludesfile = ~/.gitignore_global
   eol = lf
   autocrlf = input
 [fetch]
