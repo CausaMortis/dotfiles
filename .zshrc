@@ -21,9 +21,8 @@ unsetopt beep
 
 zstyle :omz:plugins:ssh-agent identities id_rsa blade_github_rsa  
 
-if [[ -s /home/jordy/.autojump/etc/profile.d/autojump.sh ]]; then
-  source /home/jordy/.autojump/etc/profile.d/autojump.sh
-  autoload -U compinit && compinit -u
+if [[ -s /usr/share/autojump/autojump.sh ]]; then
+  . /usr/share/autojump/autojump.sh
 fi
 
 # -----------------------------------------------------------------------------
