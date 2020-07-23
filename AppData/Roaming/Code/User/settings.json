@@ -1,6 +1,7 @@
 {
   "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
   "editor.lineNumbers": "on",
@@ -13,7 +14,8 @@
   "editor.renderWhitespace": "all",
   "editor.rulers": [
     80,
-    120
+    120,
+    160
   ],
   "editor.tabSize": 2,
   "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
@@ -21,19 +23,21 @@
   "files.autoSave": "afterDelay",
   "files.eol": "\n",
   "files.exclude": {
-    ".git": true,
+    ".git": false
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.path": "C:\\tools\\Git\\bin\\git.exe",
   "intelephense.completion.backslashPrefix": false,
-  "prettier.singleQuote": true,
+  "html.format.enable": false,
+  "javascript.format.enable": false,
+  "json.format.enable": false,
+  "typescript.format.enable": false,
   "php.suggest.basic": false,
-  "php.validate.executablePath": "C:\\tools\\php74\\php.exe",
+  "php.validate.enable": false,
   "php-cs-fixer.rules": "@PSR2",
-  "php-cs-fixer.config": "C:\\Users\\jordy\\.vscode\\.php_cs.laravel",
-  "php-cs-fixer.executablePath": "${extensionPath}\\php-cs-fixer.phar",
+  "php-cs-fixer.config": "~/.vscode/.php_cs.laravel",
   "php-cs-fixer.lastDownload": 1586859000277,
   "search.useIgnoreFiles": false,
   "search.exclude": {
@@ -48,16 +52,7 @@
   "workbench.startupEditor": "none",
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Hybrid Next (Gray Background)",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[php]": {
-    "editor.defaultFormatter": "junstyle.php-cs-fixer",
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
-  },
+    "editor.defaultFormatter": "junstyle.php-cs-fixer"
+  }
 }
