@@ -43,6 +43,14 @@ export PATH="$(yarn global bin):$PATH"
 export PATH="~/.composer/vendor/bin:$PATH"
 
 # -----------------------------------------------------------------------------
+# WSL
+# -----------------------------------------------------------------------------
+
+# https://github.com/microsoft/WSL/issues/4150#issuecomment-504209723
+# https://stackoverflow.com/questions/62104199/issues-when-debugging-php-in-vscode-using-docker-and-wsl2
+export IP=$(hostname -I)
+
+# -----------------------------------------------------------------------------
 # Post Setup
 # -----------------------------------------------------------------------------
 
