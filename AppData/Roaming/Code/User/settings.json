@@ -1,4 +1,5 @@
 {
+  "diffEditor.renderSideBySide": true,
   "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
