@@ -1,6 +1,9 @@
 {
   "css.validate": false,
   "diffEditor.renderSideBySide": true,
+  "discord.detailsIdle": "Idling",
+  "discord.detailsEditing": "Editing",
+  "discord.detailsDebugging": "Debugging",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true,
