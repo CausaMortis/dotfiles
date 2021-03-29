@@ -3,6 +3,7 @@
   email = 3071062+99linesofcode@users.noreply.github.com
 [pull]
   default = current
+  rebase = true
 [rebase]
   autosquash = true
 [push]
